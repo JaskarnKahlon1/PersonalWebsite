@@ -1,0 +1,181 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF; /* Clean white background */
+    color: #2C3E50; /* Dark slate grey text for contrast */
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+
+/* Full-Screen Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('background-image.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* White text for dramatic contrast */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional dark overlay for more contrast */
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 2s ease; /* Smooth fade-in for dramatic effect */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF; /* Clean white border */
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease; /* Slight sliding up animation for effect */
+}
+
+.about-me h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Subtle Slide-Up Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Projects Section Styling */
+.projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 40px 0;
+    color: #2C3E50; /* Dark grey */
+}
+
+/* Full-Page Project Sections */
+.project-section {
+    height: 100vh; /* Each project occupies full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F7FA; /* Light grey background */
+    border-bottom: 2px solid #E0E0E0; /* Subtle divider between sections */
+    opacity: 1; /* Make the project sections visible by default */
+    transform: translateY(0); /* No initial offset */
+    transition: opacity 1s ease, transform 1s ease; /* Subtle fade-in effect */
+}
+
+.project-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 20px;
+}
+
+.project-section h3 {
+    font-size: 2em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.project-section p {
+    font-size: 1.2em;
+    color: #7F8C8D; /* Lighter grey for project descriptions */
+    margin-bottom: 30px;
+}
+
+.project-section a {
+    color: #6C7A89; /* Muted blue for links */
+    text-decoration: none;
+    border-bottom: 1px solid #6C7A89;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-section a:hover {
+    color: #E74C3C; /* Soft red for hover state */
+    border-bottom-color: #E74C3C;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px 0;
+    background-color: #F5F7FA; /* Light grey background */
+    color: #2C3E50;
+    text-align: center;
+}
+
+footer a {
+    color: #6C7A89;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #E74C3C;
+}
+
+/* Responsive Design for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-me h1 {
+        font-size: 2.5em;
+    }
+
+    .about-me p {
+        font-size: 1em;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+}
+
