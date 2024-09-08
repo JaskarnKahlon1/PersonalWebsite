@@ -50,6 +50,7 @@ body {
     object-fit: cover;
     margin-bottom: 20px;
     animation: slideUp 1.5s ease; /* Slight sliding up animation for effect */
+    
 }
 
 .about-me h1 {
