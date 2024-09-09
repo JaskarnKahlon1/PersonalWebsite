@@ -179,4 +179,12 @@ footer a:hover {
         padding: 20px;
     }
 }
+#project-1 img {
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+}
 
+#project-3 img {
+    height: 450px; /* Adjust the height as needed */
+    width: auto; /* Maintains aspect ratio */
+}
