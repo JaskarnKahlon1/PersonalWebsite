@@ -49,8 +49,7 @@ body {
     border: 5px solid #FFFFFF; /* Clean white border */
     object-fit: cover;
     margin-bottom: 20px;
-    animation: slideUp 1.5s ease; /* Slight sliding up animation for effect */
-    
+    animation: slideUp 1.5s ease; /* Slight sliding-up animation */
 }
 
 .about-me h1 {
@@ -90,7 +89,74 @@ body {
     }
 }
 
+/* -----------------------------
+   CASE STUDY PAGE STYLING (Option B)
+   Renamed from .Case.Studies to .case-study-page
+------------------------------ */
+
+.case-study-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+.case-study-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.case-study-page h2 {
+    font-size: 2em;
+    margin: 30px 0;
+    color: #2C3E50;
+}
+
+.case-study-page h3 {
+    font-size: 1.8em;
+    margin: 25px 0 15px;
+    color: #2C3E50;
+}
+
+.case-study-page p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    line-height: 1.8;
+}
+
+.case-study-page ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.case-study-page li {
+    margin-bottom: 10px;
+}
+
+.case-study-page img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.case-study-section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+}
+
 /* Projects Section Styling */
+.projects {
+    margin-top: 60px;
+}
+
 .projects h2 {
     text-align: center;
     font-size: 2.5em;
@@ -178,7 +244,18 @@ footer a:hover {
     .projects {
         padding: 20px;
     }
+
+    .project-section {
+        height: auto; /* Let projects wrap naturally on smaller screens */
+        padding: 40px 0;
+    }
+
+    .project-content {
+        margin: 0 10px;
+    }
 }
+
+/* Specific image sizing overrides */
 #project-1 img {
     width: 600px; /* Adjust the width as needed */
     height: auto; /* Maintains aspect ratio */
@@ -187,4 +264,24 @@ footer a:hover {
 #project-3 img {
     height: 450px; /* Adjust the height as needed */
     width: auto; /* Maintains aspect ratio */
+}
+
+.case-study-link {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.case-study-btn {
+    display: inline-block;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.case-study-btn:hover {
+    background-color: #E74C3C;
 }
