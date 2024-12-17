@@ -89,10 +89,6 @@ body {
     }
 }
 
-/* -----------------------------
-   CASE STUDY PAGE STYLING (Option B)
-   Renamed from .Case.Studies to .case-study-page
------------------------------- */
 
 .case-study-page {
     max-width: 900px;
